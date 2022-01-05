@@ -67,6 +67,7 @@ header_t *
 first_fit(size_t csz)
 {
 	//Your code here
+	return NULL;
 }
 
 // helper function split cuts the chunk into two chunks. The first chunk is of size "csz", 
@@ -85,6 +86,8 @@ header_t *
 ask_os_for_chunk(size_t csz)
 {
 	//Your code here
+	//
+	return NULL;
 }
 
 /* 
@@ -125,6 +128,7 @@ header_t *
 payload2header(void *p)
 {
 	//Your code here
+	return NULL;
 
 }
 
