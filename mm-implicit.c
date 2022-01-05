@@ -32,12 +32,12 @@ init_chunk(header_t *p, size_t csz, bool allocated)
 header_t *
 next_chunk(header_t *h)
 {
+  header_t *next;
 	if (!h) {
-		return (header_t *) mem_heap_lo();
+		next = (header_t *) mem_heap_lo();
 	} else {
-		return NULL;
-	}
-       	header_t *next = (header_t *)h + h->size;
+    //fill in your code
+  }
 	if (next >= (header_t *)mem_heap_hi()) {
 		return NULL; 
 	} 
