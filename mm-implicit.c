@@ -37,7 +37,7 @@ next_chunk(header_t *h)
 	} else {
 		return NULL;
 	}
-	header_t *next = (char*) (h + h->size);
+       	header_t *next = (long)h + h->size;
 	if (next >= (header_t *)mem_heap_hi()) {
 		return NULL; 
 	} 
